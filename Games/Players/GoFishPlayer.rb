@@ -7,6 +7,7 @@ class GoFishPlayer
 
     def initialize()
         @hand = Hand.new
+        @sets = []
     end
 
 end
