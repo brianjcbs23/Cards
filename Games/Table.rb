@@ -1,4 +1,4 @@
-require_relative 'StandardDeck'
+require_relative '../Decks/StandardDeck'
 
 class Table
     @deck
