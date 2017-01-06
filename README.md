@@ -1,2 +1,2 @@
 # Cards
-A set of card games written in Ruby
+The goal of this project is to have a set of card games written in Ruby
