@@ -11,6 +11,11 @@ class GoFishPlayer
     end
 
     def turn()
+        puts @hand
+    end
+
+    def draw(card)
+        @hand.add card
     end
 
 end

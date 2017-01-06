@@ -17,5 +17,9 @@ class Hand
         @hand.length
     end
     alias length size
+
+    def to_s
+        @hand
+    end
     
 end
