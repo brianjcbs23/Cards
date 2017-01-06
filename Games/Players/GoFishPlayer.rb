@@ -10,4 +10,7 @@ class GoFishPlayer
         @sets = []
     end
 
+    def turn()
+    end
+
 end
