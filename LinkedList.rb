@@ -34,7 +34,7 @@ class LinkedList
         return node.value
     end
 
-    def index(value)
+    def [](value)
         return nil if value > @length
         node = @head
         while value >= 0 do
