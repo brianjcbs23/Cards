@@ -14,12 +14,22 @@ class GoFish
         deal
     end
 
-    def deal
+    def deal()
         @pool.shuffle
-        while pool.size > 0 do
-            player1.turn
-            player2.turn
+        (0..6).each do
+            @player1.draw @pool.next
+            @player2.draw @pool.next
         end
+        play
+    end
+
+    def play()
+        # while pool.size > 0 do
+        #     player1.turn
+        #     player2.turn
+        # end
+        player1.turn
+        player2.turn
     end
 
 end
