@@ -10,6 +10,16 @@ class GoFish
     def initialize()
         @player1 = GoFishPlayer.new
         @player2 = GoFishPlayer.new
-        
+        @pool = StandardDeck.new
+        deal
     end
+
+    def deal
+        @pool.shuffle
+        while pool.size > 0 do
+            player1.turn
+            player2.turn
+        end
+    end
+
 end

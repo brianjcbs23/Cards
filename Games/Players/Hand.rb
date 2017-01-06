@@ -12,5 +12,10 @@ class Hand
 
     def sort()
     end
+
+    def size()
+        @hand.length
+    end
+    alias length size
     
 end
