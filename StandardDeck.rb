@@ -1,11 +1,12 @@
 require_relative 'StandardCard'
+require_relative 'DeckQueue'
 
 class StandardDeck
-    attr_reader :deck
+
     @deck
 
     def initialize()
-        @deck = Queue.new
+        @deck = DeckQueue.new
         (0..3).each do |suit|
             (1..13).each do |value|
                 @deck.push StandardCard.new(value, suit)
@@ -14,18 +15,7 @@ class StandardDeck
     end
 
     def shuffle()
-        #Should I make my own queue class that includes a shuffle method?
-        size = @deck.size
-        i = 0
-        shuffle_array = []
-        while i < size do
-            shuffle_array << @deck.pop
-            i += 1
-        end
-        shuffle_array.shuffle!
-        shuffle_array.each do |card|
-            @deck.push card
-        end
+        @deck.shuffle
     end
 
     def next()
