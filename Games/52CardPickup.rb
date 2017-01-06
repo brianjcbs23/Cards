@@ -1,6 +1,6 @@
 require_relative '../Decks/StandardDeck'
 
-class Table
+class CardPickup
     @deck
 
     def initialize()
