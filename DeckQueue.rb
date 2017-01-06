@@ -1,19 +1,25 @@
-require_relative 'LinkedList'
-
 class DeckQueue
+
     @queue
 
     def initialize()
-        @queue = LinkedList.new
+        @queue = []
     end
 
     def push(value)
-        
+        @queue << value
     end
 
-    def pop
+    def pop()
+        @queue.delete_at(0)
     end
 
     def shuffle
+        @queue.shuffle!
     end
+
+    def length()
+        @queue.length
+    end
+    alias size length
 end
